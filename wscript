@@ -241,8 +241,8 @@ def configure(ctx):
         #ctx.find_program('arm-linux-androideabi-gcc', var='CC')
         #ctx.find_program('arm-linux-androideabi-g++', var='CXX')
         #ctx.find_program('arm-linux-androideabi-ar', var='AR')
-        ctx.find_program('clang', var='CC')
-        ctx.find_program('clang++', var='CXX')
+        #ctx.find_program('clang', var='CC')
+        ctx.find_program('armv7a-linux-androideabi21-clang++', var='CXX')
         ctx.env.CXXFLAGS += ['-std=c++11']
         ctx.env.LINKFLAGS += ['-Wl,-soname,libessentia.so', '-latomic']
 
